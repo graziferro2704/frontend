@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorveteria Ferro's</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <style>
+        .card > img {
+            height: 8rem;
+        }
+        .card {
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar bg-danger navbar-dark navbar-expand-sm sticky-top">
+        <div class="container">
+            <a href="#" class="navbar-brand">
+                Ferro's Sorveteria
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavBar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse collapse" id="menuNavBar">
+
+                <div class="navbar-nav">
+                    <a href="#" class="nav-link"> Principal </a>
+                    <a href="#" class="nav-link"> Contato </a>
+                </div>
+
+            </div>
+
+            <div class="navbar-nav">
+
+                <div class="navbar-nav">
+                    <a href="./Cadastro.html" class="nav-link"> Cadastro </a>
+                    <a href="./Login.html" class="nav-link"> Entrar </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section id="meucarrosel" class="carousel carousel-dark slide container" data-bs-ride="carousel">
+
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#meucarrosel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#meucarrosel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#meucarrosel" data-bs-slide-to="2"></button>
+            </div>
+
+            <!-- Imagens -->
+            <div class="carousel-inner mt-3">
+
+                <div class="carousel-item active" data-bs-interval="1000">
+                    <img src="/Bootstrap/Exercicios/ex007/image 1.jpg"
+                        style="height: 350px;" class="w-100" alt="">
+                    <div class="carousel-caption text-white">
+                        <h3 class="text-dark"> Promoção! </h3>
+                        <h1> FRETE GRÁTIS </h1>
+                        <p> PARA PEDIDOS ACIMA DE R$35,00 </p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="/Bootstrap/Exercicios/ex007/image 1.jpg"
+                        style="height: 350px; " class="w-100" alt="">
+                    <div class="carousel-caption text-white">
+                        <h3 class="text-dark"> Promoção! </h3>
+                        <h1> FRETE GRÁTIS </h1>
+                        <p> PARA PEDIDOS ACIMA DE R$35,00 </p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="/Bootstrap/Exercicios/ex007/image 1.jpg"
+                        style="height: 350px; " class="w-100" alt="">
+                    <div class="carousel-caption text-white">
+                        <h3 class="text-dark"> Promoção! </h3>
+                        <h1> FRETE GRÁTIS </h1>
+                        <p> PARA PEDIDOS ACIMA DE R$35,00 </p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#meucarrosel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="visually-hidden"> Anterior </span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#meucarrosel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="visually-hidden"> Próximo </span>
+            </button>
+
+            <hr>
+
+        </section>
+
+        <div class="d-flex justify-content-between">
+            <form>
+                <div class="input-group">
+                    <input type="search" placeholder="Procurar" class="form-control">
+                    <button type="submit" class="btn btn-danger"> Buscar </button>
+                </div>
+            </form>
+
+            <div class="d-flex justify-content-center">
+                <nav>
+                    <ul class="pagination">
+                        <li class="page-item">
+                            <a href="#" class="page-link"> 1 </a>
+                        </li>
+
+                        <li class="page-item">
+                            <a href="#" class="page-link"> 2 </a>
+                        </li>
+
+                        <li class="page-item">
+                            <a href="#" class="page-link"> 3 </a>
+                        </li>
+
+                        <li class="page-item">
+                            <a href="#" class="page-link"> 4 </a>
+                        </li>
+
+                        <li class="page-item">
+                            <a href="#" class="page-link"> 5 </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"> Ordenar pelo nome </a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href="#" class="dropdown-item"> Ordenar pelo preço </a>
+                    </li>
+                    <li>
+                        <a href="#" class="dropdown-item"> Ordenarpelo lançamento </a>
+                    </li>
+                    <li>
+                        <a href="#" class="dropdown-item">Ordenar pelos mais comprados </a>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+
+        <hr>
+
+    <section class="row gap-3 justify-content-center">
+
+        <div class="card col-8 col-md-3 col-lg-3 col-xl-2">
+            <img src="https://i.pinimg.com/474x/f5/9e/74/f59e74420a3d853276e805a9aa23083f.jpg" alt="" class="card-img-top">
+            <div class="card-header text-center">
+                R$6,00
+            </div>
+            <div class="card-body ">
+                <h6 class="card-title"> Sorvete de chocolate </h6>
+                <p class="card-text"> Sorvete da melhor qualidade! </p>
+            </div>    
+            <div class="card-footer">
+                <button class="btn btn-danger container"> Adicionar ao carrinho </button>
+            </div>
+        </div>
+
+        <div class="card col-8 col-md-3 col-lg-3 col-xl-2">
+            <img src="https://i.pinimg.com/474x/a5/3f/81/a53f81246417e577dc481123532d288a.jpg" alt="" class="card-img-top">
+            <div class="card-header text-center">
+                R$6,00
+            </div>
+            <div class="card-body ">
+                <h6 class="card-title"> Sorvete de morango </h6>
+                <p class="card-text"> Sorvete da melhor qualidade! </p>
+            </div>    
+            <div class="card-footer">
+                <button class="btn btn-danger container"> Adicionar ao carrinho </button>
+            </div>
+        </div>
+
+        <div class="card col-8 col-md-3 col-lg-3 col-xl-2">
+            <img src="https://i.pinimg.com/474x/42/d6/0d/42d60df21741763b8e33fceeeff3c08d.jpg" alt="" class="card-img-top">
+            <div class="card-header text-center">
+                R$6,00
+            </div>
+            <div class="card-body ">
+                <h6 class="card-title"> Sorvete de pistache </h6>
+                <p class="card-text"> Sorvete da melhor qualidade! </p>
+            </div>    
+            <div class="card-footer">
+                <button class="btn btn-danger container"> Adicionar ao carrinho </button>
+            </div>
+        </div>
+
+        <div class="card col-8 col-md-3 col-lg-3 col-xl-2">
+            <img src="https://i.pinimg.com/474x/fa/03/7e/fa037e974d16d385a62c8fa6ab34d9a8.jpg" alt="" class="card-img-top">
+            <div class="card-header text-center">
+                R$6,00
+            </div>
+            <div class="card-body ">
+                <h6 class="card-title"> Sorvete de ninho trufado </h6>
+                <p class="card-text"> Sorvete da melhor qualidade! </p>
+            </div>    
+            <div class="card-footer">
+                <button class="btn btn-danger container"> Adicionar ao carrinho </button>
+            </div>
+        </div>
+
+        <div class="card col-8 col-md-3 col-lg-3 col-xl-2">
+            <img src="https://i.pinimg.com/474x/a8/e3/b7/a8e3b7aa2f66ae2d9f7212deaed0a721.jpg" alt="" class="card-img-top">
+            <div class="card-header text-center">
+                R$6,00
+            </div>
+            <div class="card-body ">
+                <h6 class="card-title"> Sorvete de chiclete </h6>
+                <p class="card-text"> Sorvete da melhor qualidade! </p>
+            </div>    
+            <div class="card-footer">
+                <button class="btn btn-danger container"> Adicionar ao carrinho </button>
+            </div>
+        </div>
+
+        <div class="card col-8 col-md-3 col-lg-3 col-xl-2">
+            <img src="https://i.pinimg.com/564x/75/6e/ae/756eae82b3e95f71dbe711a01ee7dafe.jpg" alt="" class="card-img-top">
+            <div class="card-header text-center">
+                R$6,00
+            </div>
+            <div class="card-body ">
+                <h6 class="card-title"> Sorvete de baunilha </h6>
+                <p class="card-text"> Sorvete da melhor qualidade! </p>
+            </div>    
+            <div class="card-footer">
+                <button class="btn btn-danger container"> Adicionar ao carrinho </button>
+            </div>
+        </div>
+
+        <div class="card col-8 col-md-3 col-lg-3 col-xl-2">
+            <img src="https://i.pinimg.com/474x/44/51/93/445193a524e94aed1c91c7612b0a833d.jpg" alt="" class="card-img-top">
+            <div class="card-header text-center">
+                R$12,00
+            </div>
+            <div class="card-body ">
+                <h6 class="card-title"> Açaí com complementos </h6>
+                <p class="card-text"> Açaí da melhor qualidade! </p>
+            </div>    
+            <div class="card-footer">
+                <button class="btn btn-danger container"> Adicionar ao carrinho </button>
+            </div>
+        </div>
+
+        <div class="card col-8 col-md-3 col-lg-3 col-xl-2">
+            <img src="https://i.pinimg.com/564x/1e/80/a4/1e80a4a76795d7269ecd08fa2e10a2c6.jpg" alt="" class="card-img-top">
+            <div class="card-header text-center">
+                R$6,00
+            </div>
+            <div class="card-body ">
+                <h6 class="card-title"> Sorvete de flocos </h6>
+                <p class="card-text"> Sorvete da melhor qualidade! </p>
+            </div>    
+            <div class="card-footer">
+                <button class="btn btn-danger container"> Adicionar ao carrinho </button>
+            </div>
+        </div>
+
+        <div class="card col-8 col-md-3 col-lg-3 col-xl-2">
+            <img src="https://i.pinimg.com/474x/b8/e7/d8/b8e7d8f8d48fa6dc3645d180af5a0e14.jpg" alt="" class="card-img-top">
+            <div class="card-header text-center">
+                R$6,00
+            </div>
+            <div class="card-body ">
+                <h6 class="card-title"> Sorvete de chocomenta </h6>
+                <p class="card-text"> Sorvete da melhor qualidade! </p>
+            </div>    
+            <div class="card-footer">
+                <button class="btn btn-danger container"> Adicionar ao carrinho </button>
+            </div>
+        </div>
+
+        <div class="card col-8 col-md-3 col-lg-3 col-xl-2">
+            <img src="https://i.pinimg.com/564x/77/07/5c/77075c939de76aa690de79a9718f771e.jpg" alt="" class="card-img-top">
+            <div class="card-header text-center">
+                R$6,00
+            </div>
+            <div class="card-body ">
+                <h6 class="card-title"> Sorvete de maracujá </h6>
+                <p class="card-text"> Sorvete da melhor qualidade! </p>
+            </div>    
+            <div class="card-footer">
+                <button class="btn btn-danger container"> Adicionar ao carrinho </button>
+            </div>
+        </div>
+
+        <div class="card col-8 col-md-3 col-lg-3 col-xl-2">
+            <img src="/Bootstrap/Exercicios/ex007/image 2.jpg" alt="" class="card-img-top">
+            <div class="card-header text-center">
+                R$6,00
+            </div>
+            <div class="card-body ">
+                <h6 class="card-title"> Sorvete de iogurte-grego </h6>
+                <p class="card-text"> Sorvete da melhor qualidade! </p>
+            </div>    
+            <div class="card-footer">
+                <button class="btn btn-danger container"> Adicionar ao carrinho </button>
+            </div>
+        </div>
+
+        <div class="card col-8 col-md-3 col-lg-3 col-xl-2">
+            <img src="/Bootstrap/Exercicios/ex007/image 3.jpg" alt="" class="card-img-top">
+            <div class="card-header text-center">
+                R$6,00
+            </div>
+            <div class="card-body ">
+                <h6 class="card-title"> Sorvete de uva </h6>
+                <p class="card-text"> Sorvete da melhor qualidade! </p>
+            </div>    
+            <div class="card-footer">
+                <button class="btn btn-danger container"> Adicionar ao carrinho </button>
+            </div>
+        </div>
+
+        <div class="card col-8 col-md-3 col-lg-3 col-xl-2">
+            <img src="/Bootstrap/Exercicios/ex007/image 4.jpg" alt="" class="card-img-top">
+            <div class="card-header text-center">
+                R$6,00
+            </div>
+            <div class="card-body ">
+                <h6 class="card-title"> Sorvete de ovomaltine </h6>
+                <p class="card-text"> Sorvete da melhor qualidade! </p>
+            </div>    
+            <div class="card-footer">
+                <button class="btn btn-danger container"> Adicionar ao carrinho </button>
+            </div>
+        </div>
+
+        <div class="card col-8 col-md-3 col-lg-3 col-xl-2">
+            <img src="https://i.pinimg.com/474x/55/91/c3/5591c3d4ecf5b692154beca87659881d.jpg" alt="" class="card-img-top">
+            <div class="card-header text-center">
+                R$6,00
+            </div>
+            <div class="card-body ">
+                <h6 class="card-title"> Sorvete de cookie </h6>
+                <p class="card-text"> Sorvete da melhor qualidade! </p>
+            </div>    
+            <div class="card-footer">
+                <button class="btn btn-danger container"> Adicionar ao carrinho </button>
+            </div>
+        </div>
+
+        <div class="card col-8 col-md-3 col-lg-3 col-xl-2">
+            <img src="https://i.pinimg.com/474x/23/c2/6d/23c26d04e2f922e9e71d3ad15ef79765.jpg" alt="" class="card-img-top">
+            <div class="card-header text-center">
+                R$6,00
+            </div>
+            <div class="card-body ">
+                <h6 class="card-title"> Sorvete de coco </h6>
+                <p class="card-text"> Sorvete da melhor qualidade! </p>
+            </div>    
+            <div class="card-footer">
+                <button class="btn btn-danger container"> Adicionar ao carrinho </button>
+            </div>
+        </div>
+
+        <div class="card col-8 col-md-3 col-lg-3 col-xl-2">
+            <img src="https://i.pinimg.com/474x/bc/7e/e5/bc7ee5c006f8fce6d7a6225ce539403d.jpg" alt="" class="card-img-top">
+            <div class="card-header text-center">
+                R$6,00
+            </div>
+            <div class="card-body ">
+                <h6 class="card-title"> Sorvete de creme de avelâ </h6>
+                <p class="card-text"> Sorvete da melhor qualidade! </p>
+            </div>    
+            <div class="card-footer">
+                <button class="btn btn-danger container"> Adicionar ao carrinho </button>
+            </div>
+        </div>
+
+        <div class="card col-8 col-md-3 col-lg-3 col-xl-2">
+            <img src="/Bootstrap/Exercicios/ex007/image 6.jpg" alt="" class="card-img-top">
+            <div class="card-header text-center">
+                R$6,00
+            </div>
+            <div class="card-body ">
+                <h6 class="card-title"> Sorvete de abacaxi </h6>
+                <p class="card-text"> Sorvete da melhor qualidade! </p>
+            </div>    
+            <div class="card-footer">
+                <button class="btn btn-danger container"> Adicionar ao carrinho </button>
+            </div>
+        </div>
+
+        <div class="card col-8 col-md-3 col-lg-3 col-xl-2">
+            <img src="/Bootstrap/Exercicios/ex007/image 7.jpg" alt="" class="card-img-top">
+            <div class="card-header text-center">
+                R$6,00
+            </div>
+            <div class="card-body ">
+                <h6 class="card-title"> Sorvete de blue ice </h6>
+                <p class="card-text"> Sorvete da melhor qualidade! </p>
+            </div>    
+            <div class="card-footer">
+                <button class="btn btn-danger container"> Adicionar ao carrinho </button>
+            </div>
+        </div>
+
+        <div class="card col-8 col-md-3 col-lg-3 col-xl-2">
+            <img src="https://i.pinimg.com/564x/2f/ab/ba/2fabba4b1dd0d921d501660eb792bd88.jpg" alt="" class="card-img-top">
+            <div class="card-header text-center">
+                R$6,00
+            </div>
+            <div class="card-body ">
+                <h6 class="card-title"> Sorvete de sensação </h6>
+                <p class="card-text"> Sorvete da melhor qualidade! </p>
+            </div>    
+            <div class="card-footer">
+                <button class="btn btn-danger container"> Adicionar ao carrinho </button>
+            </div>
+        </div>
+
+        <div class="card col-8 col-md-3 col-lg-3 col-xl-2">
+            <img src="/Bootstrap/Exercicios/ex007/image 8.jpg" alt="" class="card-img-top">
+            <div class="card-header text-center">
+                R$6,00
+            </div>
+            <div class="card-body ">
+                <h6 class="card-title"> Sorvete de torta de limão </h6>
+                <p class="card-text"> Sorvete da melhor qualidade! </p>
+            </div>    
+            <div class="card-footer">
+                <button class="btn btn-danger container"> Adicionar ao carrinho </button>
+            </div>
+        </div>
+
+    </section>    
+</main>
+
+<footer class="bg-danger text-white text-center mt-4 fixed-bottom">
+    Sorveteria Ferro's
+</footer>
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+
+</html>

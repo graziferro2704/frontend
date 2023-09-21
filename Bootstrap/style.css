@@ -1,0 +1,70 @@
+@media  (min-width: 576px) {  
+
+    .principal {
+        background-color: red;
+    }
+}
+
+@media  (min-width: 768px) {  
+
+    .principal {
+        background-color: blue;
+    }
+}
+
+@media  (min-width: 992px) {  
+
+    .principal {
+        background-color: green;
+    }
+}
+
+@media  (min-width: 1200px) {  
+
+    .principal {
+        background-color: grey;
+    }
+}
+
+@media  (min-width: 1400px) {  
+
+    .principal {
+        background-color: purple;
+    }
+}
+
+@media (min-width: 576px) {
+    
+    .imagem {
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDXrh99eC2Awx3zg0_a1GjnbInEsXCIf-oFw&usqp=CAU);
+    }
+}
+
+@media (min-width:768px) {
+    
+    .imagem {
+        background-image: url(https://st4.depositphotos.com/1909225/26727/i/450/depositphotos_267274700-stock-photo-wolf-at-the-entrance-to.jpg);
+    }
+}
+
+@media (min-width: 992px) {
+    
+    .imagem {
+        background-image: url(https://img.freepik.com/fotos-gratis/lua-no-ceu-a-noite-jogo-de-ativos-de-fundo-2d-futurista-generativo-ai_191095-2034.jpg);
+    }
+}
+
+@media (min-width: 1200px) {
+    
+    .imagem {
+        background-image: url(https://img.quizur.com/f/img60eb850a5569f2.71061215.png?lastEdited=1626047759);
+    }
+}
+
+@media (min-width: 1400px) {
+    
+    .imagem {
+        background-image: url(https://img.freepik.com/fotos-premium/coiote-correndo-cacando-e-atacando-predador-generative-ai_634358-484.jpg?w=2000);
+    }
+}
+
